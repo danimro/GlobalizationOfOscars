@@ -50,7 +50,6 @@ def extract_params(url: str) -> dict:
     user_agent = {'User-agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=user_agent)
     soup = BeautifulSoup(response.text, 'html.parser')
-    review_dict = {}
     review_dict = extract_name_and_year(soup)
     review_dict['summary'] = str(extract_summary(soup))
     review_dict['metascore'] = extract_metascore(soup)
