@@ -5,8 +5,9 @@ from bs4 import BeautifulSoup, element
 import pandas as pd
 import re
 import csv
+import string
 
-regex = re.compile(r"https:\/\/www\.metacritic\.com\/movie\/.+\/details")
+regex = re.compile(r"https:\/\/www\.metacritic\.com\/movie\/(.+)\/details")
 regex_for_name_extraction = re.compile(r"https:\/\/www\.metacritic\.com\/movie\/(.+)")
 
 
@@ -47,18 +48,25 @@ class CSVParser:
 class Movie:
     @staticmethod
     def find_url(movie_name: str) -> str or None:
+        movie_name.translate(str.maketrans('', '', string.punctuation))
+        word_array = movie_name.lower().replace("'", "").split(" ")
         query = f'{movie_name} metacritic details'
-        for j in search(query, tld="com", num=8, stop=10, pause=0.8):
+        for j in search(query, tld="com", num=8, stop=10, pause=2):
             match = regex.match(j)
             if match:
-                url = match.group(0)
-                return url
+                name = match.group(1).lower().replace("'", "")
+                name.translate(str.maketrans('', '', string.punctuation))
+                true_name = all([word in name for word in word_array])
+                if true_name:
+                    return match.group(0)  # url
             else:
                 match = regex_for_name_extraction.match(j)
                 if match:
-                    name = match.group(1)
-                    url = f'https://www.metacritic.com/movie/{name}/details'
-                    return url
+                    name = match.group(1).lower().replace("'", "")
+                    name.translate(str.maketrans('', '', string.punctuation))
+                    if all([word in name for word in word_array]):
+                        url = f'https://www.metacritic.com/movie/{match.group(1)}/details'
+                        return url
         return None
 
     def __eq__(self, other):
@@ -83,14 +91,16 @@ class Movie:
             user_agent = {'User-agent': 'Mozilla/5.0'}
             response = requests.get(self.url, headers=user_agent)
             soup = BeautifulSoup(response.text, 'html.parser')
-            self.summary = Movie.extract_summary(soup)
-            self.name = Movie.extract_name(soup)
+            extracted_year = Movie.extract_year(soup)
             self.year = int(year)
-            self.summary = str(Movie.extract_summary(soup))
-            self.metascore = Movie.extract_metascore(soup)
-            self.genre = Movie.extract_genre(soup)
-            self.languages = Movie.extract_language(soup)
-            self.countries = Movie.extract_country(soup)
+            if extracted_year is None or abs(self.year - extracted_year) < 3:
+                self.summary = Movie.extract_summary(soup)
+                self.name = Movie.extract_name(soup)
+                self.summary = str(Movie.extract_summary(soup))
+                self.metascore = Movie.extract_metascore(soup)
+                self.genre = Movie.extract_genre(soup)
+                self.languages = Movie.extract_language(soup)
+                self.countries = Movie.extract_country(soup)
         self.winner = winner
         self.competition_category = competition_category
 
@@ -101,18 +111,27 @@ class Movie:
 
     @staticmethod
     @wrapper
+    def extract_year(soup: BeautifulSoup):
+        date = soup.find_all('span', class_='release_date')[0].contents[3].contents[0]
+        year = int(date[date.find(',') + 1:])
+        return year
+
+    @staticmethod
+    @wrapper
     def extract_name(soup: BeautifulSoup):
         name = str(
             soup.find_all('div', class_='product_page_title oswald upper')[0].contents[1].contents[0].contents[0])
-        # date = soup.find_all('span', class_='release_date')[0].contents[3].contents[0]
-        # year = int(date[date.find(',') + 1:])
+
         return name
 
     @staticmethod
     @wrapper
     def extract_metascore(soup: BeautifulSoup):
-        tag = soup.find_all('span', class_='metascore_w larger movie positive') or soup.find_all('span',
-                                                                                                 class_='metascore_w larger movie mixed')
+        class_names = ["metascore_w larger movie positive", "metascore_w larger movie mixed",
+                       "metascore_w larger movie negative"]
+        tag = None
+        for class_name in class_names:
+            tag = tag or soup.find_all('span', class_=class_name)
         return int(tag[0].contents[0])
 
     @staticmethod
@@ -159,10 +178,7 @@ def divide_by_number(x, y):
     return x / y
 
 
-line_to_test = "1998,FOREIGN LANGUAGE FILM,FALSE,The Grandfather".split(",")
-ohad = Movie(*line_to_test)
-
 t = "asd"
-ohad = CSVParser("awards_by_films.csv")
+ohad = CSVParser("awards_by_films_shortened.csv")
 too = "boo"
 ohad.write_to_file()
