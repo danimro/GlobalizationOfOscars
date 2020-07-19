@@ -23,7 +23,8 @@ def wrapper(some_function):
 
 class CSVParser:
     def __init__(self, filename: str):
-        self.movies = set()
+        self.movies = list()
+        self.summaries = list()
         with open(filename, "r") as csv_file:
             line_count = 0
             lines_iterator = csv.reader(csv_file)
@@ -31,9 +32,10 @@ class CSVParser:
                 if line_count != 0:
                     movie = Movie(*line)
                     print(movie)
-                    if movie.url:
-                        self.movies.add(movie)
+                    if movie.url and movie.summary and not movie.corrupted:
+                        self.movies.append(movie)
                 line_count += 1
+        self.movies = list(dict.fromkeys(self.movies))
 
     def write_to_file(self):
         with open("output.csv", "w") as csv_to_write:
@@ -87,16 +89,18 @@ class Movie:
         self.entity = entity
         self.competition_category = competition_category
         self.winner = True if winner == 'TRUE' else False
+        self.corrupted = True
         if self.url:
             user_agent = {'User-agent': 'Mozilla/5.0'}
             response = requests.get(self.url, headers=user_agent)
             soup = BeautifulSoup(response.text, 'html.parser')
             extracted_year = Movie.extract_year(soup)
             self.year = int(year)
-            if extracted_year is None or abs(self.year - extracted_year) < 3:
-                self.summary = Movie.extract_summary(soup)
-                self.name = Movie.extract_name(soup)
-                self.summary = str(Movie.extract_summary(soup))
+
+            self.summary = str(Movie.extract_summary(soup))
+            if (extracted_year is None or abs(self.year - extracted_year) < 3) and self.summary:
+                self.corrupted = False
+                self.name = Movie.extract_name(soup) or entity
                 self.metascore = Movie.extract_metascore(soup)
                 self.genre = Movie.extract_genre(soup)
                 self.languages = Movie.extract_language(soup)
@@ -177,8 +181,8 @@ except ImportError:
 def divide_by_number(x, y):
     return x / y
 
-
-t = "asd"
-ohad = CSVParser("awards_by_films_shortened.csv")
-too = "boo"
-ohad.write_to_file()
+#
+# t = "asd"
+# ohad = CSVParser("awards_by_films_shortened.csv")
+# too = "boo"
+# ohad.write_to_file()
