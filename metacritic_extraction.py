@@ -6,6 +6,10 @@ import pandas as pd
 import re
 import csv
 import string
+import pickle
+import sys
+
+sys.setrecursionlimit(1000000)
 
 regex = re.compile(r"https:\/\/www\.metacritic\.com\/movie\/(.+)\/details")
 regex_for_name_extraction = re.compile(r"https:\/\/www\.metacritic\.com\/movie\/(.+)")
@@ -32,7 +36,7 @@ class CSVParser:
                 if line_count != 0:
                     movie = Movie(*line)
                     print(movie)
-                    if movie.url and movie.summary and not movie.corrupted:
+                    if movie.url and movie.summary and not movie.corrupted and not movie in self.movies:
                         self.movies.append(movie)
                 line_count += 1
         self.movies = list(dict.fromkeys(self.movies))
@@ -77,7 +81,7 @@ class Movie:
     def __hash__(self):
         return hash(self.entity)
 
-    def __init__(self, year: str, competition_category: str, winner: str, entity: str):
+    def __init__(self, year: str, competition_category: str, winner: str, entity: str, from_csv=[]):
         """
         Constructor. Gets parameter from CSV , looks for google the specific metacritic URL and parses the details
         page with BeautifulSoup.
@@ -85,28 +89,56 @@ class Movie:
         :param winner:
         :param entity:
         """
-        self.url = Movie.find_url(entity)
-        self.entity = entity
-        self.competition_category = competition_category
-        self.winner = True if winner == 'TRUE' else False
-        self.corrupted = True
-        if self.url:
-            user_agent = {'User-agent': 'Mozilla/5.0'}
-            response = requests.get(self.url, headers=user_agent)
-            soup = BeautifulSoup(response.text, 'html.parser')
-            extracted_year = Movie.extract_year(soup)
-            self.year = int(year)
+        if not from_csv:
+            self.url = Movie.find_url(entity)
+            self.entity = entity
+            self.competition_category = competition_category
+            self.winner = True if winner == 'TRUE' else False
+            self.corrupted = True
+            if self.url:
+                user_agent = {'User-agent': 'Mozilla/5.0'}
+                response = requests.get(self.url, headers=user_agent)
+                soup = BeautifulSoup(response.text, 'html.parser')
+                extracted_year = Movie.extract_year(soup)
+                self.year = int(year)
 
-            self.summary = str(Movie.extract_summary(soup))
-            if (extracted_year is None or abs(self.year - extracted_year) < 3) and self.summary:
-                self.corrupted = False
-                self.name = Movie.extract_name(soup) or entity
-                self.metascore = Movie.extract_metascore(soup)
-                self.genre = Movie.extract_genre(soup)
-                self.languages = Movie.extract_language(soup)
-                self.countries = Movie.extract_country(soup)
-        self.winner = winner
-        self.competition_category = competition_category
+                self.summary = str(Movie.extract_summary(soup))
+                if (extracted_year is None or abs(self.year - extracted_year) < 3) and self.summary:
+                    self.corrupted = False
+                    self.name = Movie.extract_name(soup) or entity
+                    self.metascore = Movie.extract_metascore(soup)
+                    self.genre = Movie.extract_genre(soup)
+                    self.languages = Movie.extract_language(soup)
+                    self.countries = Movie.extract_country(soup)
+            self.winner = winner
+            self.competition_category = competition_category
+        # else:
+        #     poteach = False
+        #     counter = 0
+        #     list_of_lists = [[], [], []]
+        #     if from_csv[0] == "On the Waterfront":
+        #         ohad = ""
+        #     for i in range(len(from_csv)):
+        #         if i >= 6 and len(from_csv[i] < 40):
+        #             if "[" in from_csv[i]:
+        #                 poteach = True
+        #             if poteach:
+        #                 list_of_lists[counter].append(from_csv[i])
+        #                 if "]" in from_csv[i]:
+        #                     poteach = False
+        #                     counter += 1
+        #         if counter > 2:
+        #             self.metascore = from_csv[i]
+        #     self.name = from_csv[0]
+        #     self.year = int(from_csv[1])
+        #     self.competition_category = from_csv[2]
+        #     self.winner = from_csv[3]
+        #     self.url = from_csv[4]
+        #     self.summary = from_csv[5]
+        #     self.countries = list(list_of_lists[0])
+        #     self.languages = list(list_of_lists[1])
+        #     self.genre = list(list_of_lists[2])
+        #     ohad = "ohad"
 
     @staticmethod
     @wrapper
@@ -161,6 +193,11 @@ class Movie:
         country_array = [i.contents[0] for i in country_array_tag if isinstance(i, element.Tag)]
         return country_array
 
+    def to_dict(self):
+        return {'name': self.name, 'year': self.year, 'competition_category': self.competition_category,
+                'winner': self.year, 'url': self.url, 'summary': self.summary, 'countries': self.countries,
+                'languages': self.languages, 'genre': self.genre, 'metascore': self.metascore}
+
     def to_line(self):
         return [self.name, self.year, self.competition_category, self.winner, self.url, self.summary,
                 str(self.countries), str(self.languages), str(self.genre), str(self.metascore)]
@@ -181,8 +218,15 @@ except ImportError:
 def divide_by_number(x, y):
     return x / y
 
-#
-# t = "asd"
-# ohad = CSVParser("awards_by_films_shortened.csv")
+
+# read
+# with open("pickled.roy", "rb") as f:
+#     movie_list = pickle.loads(f.read())
+#     ohad = "ohad"
+#### **************** ########
+# write
+ohad = CSVParser("awards_by_films.csv")
+with open("pickled.roy", "wb") as f:
+    f.write(pickle.dumps(ohad))
 # too = "boo"
 # ohad.write_to_file()

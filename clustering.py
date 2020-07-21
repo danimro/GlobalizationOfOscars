@@ -16,13 +16,16 @@ from sklearn.cluster import KMeans
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from metacritic_extraction import Movie
+import pickle
 
 stemmer = SnowballStemmer("english")
 nltk.download('punkt')
 
 
 # here I define a tokenizer and stemmer which returns the set of stems in the text that it is passed
-def cluster_us(movie_list):
+def cluster_us(movie_list=None):
+    # if not movie_list:
+
     summary_list = []
     films = []
     ranks = []
@@ -67,13 +70,11 @@ def cluster_us(movie_list):
     km = joblib.load('doc_cluster.pkl')
     clusters = km.labels_.tolist()
     vocab_frame = pd.DataFrame({'words': totalvocab_stemmed}, index=totalvocab_stemmed)
-    for movie in movie_list:
-        films.append(movie.name)
-        ranks.append(movie.metascore)
 
-    films = {'title':films, 'rank': ranks, 'synopsis': summary_list, 'cluster': clusters, 'genre': genres}
+    films = {'title': films, 'rank': ranks, 'synopsis': summary_list, 'cluster': clusters, 'genre': genres}
 
-    frame = pd.DataFrame(films, index=[clusters], columns=['rank', 'title', 'cluster', 'genre'])
+    frame = pd.DataFrame(films, index=clusters, columns=['title', 'rank', 'cluster', 'genre'])
+    # frame = pd.DataFrame([films], index=[clusters], columns=['rank', 'title', 'cluster', 'genre'])
 
     print("Top terms per cluster:")
     print()
@@ -84,13 +85,14 @@ def cluster_us(movie_list):
         print("Cluster %d words:" % i, end='')
 
         for ind in order_centroids[i, :6]:  # replace 6 with n words per cluster
-            print(' %s' % vocab_frame.ix[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'),
+            oahd = vocab_frame.loc[terms[ind].split(' ')]
+            print(' %s' % vocab_frame.loc[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'),
                   end=',')
-        print()  # add whitespace
+        print()  # add whitespace;
         print()  # add whitespace
 
         print("Cluster %d titles:" % i, end='')
-        for title in frame.ix[i]['title'].values.tolist():
+        for title in frame.loc[i]['title'].values.tolist():
             print(' %s,' % title, end='')
         print()  # add whitespace
         print()  # add whitespace
