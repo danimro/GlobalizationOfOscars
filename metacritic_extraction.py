@@ -225,8 +225,8 @@ def divide_by_number(x, y):
 #     ohad = "ohad"
 #### **************** ########
 # write
-ohad = CSVParser("awards_by_films_shortened.csv")
-with open("pickled.roy", "wb") as f:
-    f.write(pickle.dumps(ohad))
+# ohad = CSVParser("awards_by_films_shortened.csv")
+# with open("pickled.roy", "wb") as f:
+#     f.write(pickle.dumps(ohad))
 # too = "boo"
 # ohad.write_to_file()

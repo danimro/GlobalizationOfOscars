@@ -9,6 +9,7 @@ from sklearn import feature_extraction
 # import mpld3
 from typing import List
 from nltk.stem.snowball import SnowballStemmer
+from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
@@ -17,7 +18,8 @@ import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from metacritic_extraction import Movie
 import pickle
-
+stemmer2 = WordNetLemmatizer()
+nltk.download("wordnet")
 stemmer = SnowballStemmer("english")
 nltk.download('punkt')
 
@@ -80,25 +82,29 @@ def cluster_us(movie_list=None):
     print()
     # sort cluster centers by proximity to centroid
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
+    with open ("nimni","w") as f:
+        for i in range(num_clusters):
+            f.write("Cluster %d words:" % i)
+            print("Cluster %d words:" % i, end='')
 
-    for i in range(num_clusters):
-        print("Cluster %d words:" % i, end='')
+            for ind in order_centroids[i, :6]:  # replace 6 with n words per cluster
+                f.write(' %s' % vocab_frame.loc[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'))
+                print(' %s' % vocab_frame.loc[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'),
+                      end=',')
+            print()  # add whitespace;
+            print()  # add whitespace
 
-        for ind in order_centroids[i, :6]:  # replace 6 with n words per cluster
-            oahd = vocab_frame.loc[terms[ind].split(' ')]
-            print(' %s' % vocab_frame.loc[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'),
-                  end=',')
-        print()  # add whitespace;
-        print()  # add whitespace
+            print("Cluster %d titles:" % i, end='')
+            f.write("Cluster %d titles:" % i)
+            titles = frame.loc[i]['title']
+            f.write(str(titles))
 
-        print("Cluster %d titles:" % i, end='')
-        for title in frame.loc[i]['title'].values.tolist():
-            print(' %s,' % title, end='')
-        print()  # add whitespace
-        print()  # add whitespace
+            print(titles)
+            print()  # add whitespace
+            print()  # add whitespace
 
-    print()
-    print()
+        print()
+        print()
 
 
 def tokenize_and_stem(text):
@@ -106,8 +112,10 @@ def tokenize_and_stem(text):
     tokens = [word for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
     filtered_tokens = []
     # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
+    stop_words = stopwords.words('english')
+    stop_words.append("\'s")
     for token in tokens:
-        if re.search('[a-zA-Z]', token):
+        if re.search('[a-zA-Z]', token) and token not in stop_words:
             filtered_tokens.append(token)
     stems = [stemmer.stem(t) for t in filtered_tokens]
     return stems
