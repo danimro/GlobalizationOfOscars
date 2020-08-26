@@ -26,7 +26,7 @@ def wrapper(some_function):
 
 
 class CSVParser:
-    def __init__(self, filename: str):
+    def start(self, filename: str):
         self.movies = list()
         self.summaries = list()
         with open(filename, "r") as csv_file:
@@ -34,12 +34,17 @@ class CSVParser:
             lines_iterator = csv.reader(csv_file)
             for line in lines_iterator:
                 if line_count != 0:
-                    movie = Movie(*line)
+                    try:
+                        movie = Movie(*line)
+                    except Exception as e:
+                        continue
                     print(movie)
                     if movie.url and movie.summary and not movie.corrupted and not movie in self.movies:
                         self.movies.append(movie)
                 line_count += 1
         self.movies = list(dict.fromkeys(self.movies))
+        self.write_summaries_to_file()
+        return self
 
     def write_to_file(self):
         with open("output.csv", "w") as csv_to_write:
@@ -49,6 +54,11 @@ class CSVParser:
             writer.writerow(column_names)
             for movie in self.movies:
                 writer.writerow(movie.to_line())
+
+    def write_summaries_to_file(self):
+        with open("summary_output.txt", "w") as summary_file:
+            for movie in self.movies:
+                summary_file.write(f'{movie.summary} \n')
 
 
 class Movie:
@@ -225,8 +235,8 @@ def divide_by_number(x, y):
 #     ohad = "ohad"
 #### **************** ########
 # write
-# ohad = CSVParser("awards_by_films_shortened.csv")
-# with open("pickled.roy", "wb") as f:
-#     f.write(pickle.dumps(ohad))
-# too = "boo"
+ohad = CSVParser().start("awards_by_films.csv")
+with open("pickled.roy", "wb") as f:
+    f.write(pickle.dumps(ohad.movies))
+# # too = "boo"
 # ohad.write_to_file()

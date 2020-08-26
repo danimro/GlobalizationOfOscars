@@ -40,14 +40,22 @@ def cluster_us(movie_list=None):
         genres.append(str(movie.genre))
     """this method gets a list of dictionaries and cluster the movies by it. """
     totalvocab_stemmed = []
+    totalvocab_tokenized = []
     for i in range(len(summary_list)):
         allwords_stemmed = tokenize_and_stem(summary_list[i])  # for each item in 'synopses', tokenize/stem
         totalvocab_stemmed.extend(allwords_stemmed)  # extend the 'totalvocab_stemmed' list
 
+        # allwords_tokenized = tokenize_only(summary_list[i])
+        # totalvocab_tokenized.extend(allwords_tokenized)  # extend the 'totalvocab_stemmed' list
+
     # define vectorizer parameters
     tfidf_vectorizer = TfidfVectorizer(max_df=0.8, max_features=200000,
                                        min_df=0.2, stop_words='english',
-                                       use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 3))
+                                       use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1, 1))
+    # tfidf_vectorizered = TfidfVectorizer(max_df=0.8, max_features=200000,
+    #                                    min_df=0.05, stop_words='english',
+    #                                    use_idf=True, tokenizer=tokenize_only, ngram_range=(1, 3), max_df=0.8)
+    tfidf_vectorizer=TfidfVectorizer(stop_words='english', lowercase=True, tokenizer=tokenize_and_stem, ngram_range=(1,1), max_df=0.8, min_df=0.01)
 
     tfidf_matrix = tfidf_vectorizer.fit_transform(summary_list)  # fit the vectorizer to synopses
 
@@ -67,15 +75,20 @@ def cluster_us(movie_list=None):
     # uncomment the below to save your model
     # since I've already run my model I am loading from the pickle
 
-    joblib.dump(km, 'doc_cluster.pkl')
-
-    km = joblib.load('doc_cluster.pkl')
+    # joblib.dump(km, 'doc_cluster.pkl')
+    #
+    # km = joblib.load('doc_cluster.pkl')
     clusters = km.labels_.tolist()
     vocab_frame = pd.DataFrame({'words': totalvocab_stemmed}, index=totalvocab_stemmed)
 
     films = {'title': films, 'rank': ranks, 'synopsis': summary_list, 'cluster': clusters, 'genre': genres}
 
+
     frame = pd.DataFrame(films, index=clusters, columns=['title', 'rank', 'cluster', 'genre'])
+    print(frame['cluster'].value_counts())
+    grouped = frame['rank'].groupby(frame['cluster'])  # groupby cluster for aggregation purposes
+
+    print(grouped.mean())  # average rank (1 to 100) per cluster
     # frame = pd.DataFrame([films], index=[clusters], columns=['rank', 'title', 'cluster', 'genre'])
 
     print("Top terms per cluster:")
@@ -87,10 +100,11 @@ def cluster_us(movie_list=None):
             f.write("Cluster %d words:" % i)
             print("Cluster %d words:" % i, end='')
 
-            for ind in order_centroids[i, :6]:  # replace 6 with n words per cluster
+            for ind in order_centroids[i, :5]:  # replace 6 with n words per cluster
+                print(terms[ind])
                 f.write(' %s' % vocab_frame.loc[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'))
-                print(' %s' % vocab_frame.loc[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'),
-                      end=',')
+                # print(' %s' % vocab_frame.loc[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'),
+                #       end=',')
             print()  # add whitespace;
             print()  # add whitespace
 
@@ -111,13 +125,18 @@ def tokenize_and_stem(text):
     # first tokenize by sentence, then by word to ensure that punctuation is caught as it's own token
     tokens = [word for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
     filtered_tokens = []
+    filtered_tokens_set = set()
     # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
     stop_words = stopwords.words('english')
     stop_words.append("\'s")
     for token in tokens:
         if re.search('[a-zA-Z]', token) and token not in stop_words:
             filtered_tokens.append(token)
+            filtered_tokens_set.add(token)
     stems = [stemmer.stem(t) for t in filtered_tokens]
+    # stems = [stemmer2.lemmatize(t) for t in filtered_tokens]
+
+    # stems = [stemmer.stem(t) for t in filtered_tokens_set]
     return stems
 
 

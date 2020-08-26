@@ -1,9 +1,7 @@
-from metacritic_extraction import CSVParser
+from metacritic_extraction import CSVParser, Movie
+from pickle import load
 from clustering import cluster_us
-hey = "hi"
-parser = CSVParser("awards_by_films_shortened.csv")
-# ohad.write_to_file()
-# too = cluster_us(ohad.movies)
-
-cluster_us(parser.movies)
+with open("pickled.roy", "rb") as f:
+    parser = load(f)
+cluster_us(parser)
 roy = "aaaa"
