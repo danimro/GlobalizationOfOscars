@@ -18,6 +18,7 @@ import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from metacritic_extraction import Movie
 import pickle
+
 stemmer2 = WordNetLemmatizer()
 nltk.download("wordnet")
 stemmer = SnowballStemmer("english")
@@ -32,12 +33,20 @@ def cluster_us(movie_list=None):
     films = []
     ranks = []
     genres = []
+    years = []
+    foreigns = []
+    languages = []
+    countries = []
 
     for movie in movie_list:
         summary_list.append(movie.summary)
         films.append(movie.name)
         ranks.append(movie.metascore)
         genres.append(str(movie.genre))
+        years.append(int(movie.year))
+        foreigns.append(1 if movie.competition_category == 'FOREIGN LANGUAGE FILM' else 0)
+        languages.append(movie.languages)
+        countries.append(movie.countries)
     """this method gets a list of dictionaries and cluster the movies by it. """
     totalvocab_stemmed = []
     totalvocab_tokenized = []
@@ -55,7 +64,8 @@ def cluster_us(movie_list=None):
     # tfidf_vectorizered = TfidfVectorizer(max_df=0.8, max_features=200000,
     #                                    min_df=0.05, stop_words='english',
     #                                    use_idf=True, tokenizer=tokenize_only, ngram_range=(1, 3), max_df=0.8)
-    tfidf_vectorizer=TfidfVectorizer(stop_words='english', lowercase=True, tokenizer=tokenize_and_stem, ngram_range=(1,1), max_df=0.8, min_df=0.01)
+    tfidf_vectorizer = TfidfVectorizer(stop_words='english', lowercase=True, tokenizer=tokenize_and_stem,
+                                       ngram_range=(1, 1), max_df=0.8, min_df=0.01)
 
     tfidf_matrix = tfidf_vectorizer.fit_transform(summary_list)  # fit the vectorizer to synopses
 
@@ -81,10 +91,10 @@ def cluster_us(movie_list=None):
     clusters = km.labels_.tolist()
     vocab_frame = pd.DataFrame({'words': totalvocab_stemmed}, index=totalvocab_stemmed)
 
-    films = {'title': films, 'rank': ranks, 'synopsis': summary_list, 'cluster': clusters, 'genre': genres}
+    films = {'title': films, 'rank': ranks, 'synopsis': summary_list, 'cluster': clusters, 'genre': genres,
+             'year': years, 'foreign': foreigns, 'language':languages, 'country':countries}
 
-
-    frame = pd.DataFrame(films, index=clusters, columns=['title', 'rank', 'cluster', 'genre'])
+    frame = pd.DataFrame(films, index=clusters, columns=['title', 'rank', 'cluster', 'genre', 'year', 'foreign', 'language', 'country'])
     print(frame['cluster'].value_counts())
     grouped = frame['rank'].groupby(frame['cluster'])  # groupby cluster for aggregation purposes
 
@@ -95,7 +105,7 @@ def cluster_us(movie_list=None):
     print()
     # sort cluster centers by proximity to centroid
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
-    with open ("nimni","w") as f:
+    with open("nimni", "w") as f:
         for i in range(num_clusters):
             f.write("Cluster %d words:" % i)
             print("Cluster %d words:" % i, end='')
