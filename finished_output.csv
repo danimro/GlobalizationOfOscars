@@ -1,242 +1,242 @@
 ,title,rank,cluster,genre,year,foreign,language,country
-1,Cimarron,70.0,1,"['Drama', 'Western']",1930,0,"['English', 'French']",['US']
-3,The Front Page,76.0,3,['Comedy'],1930,0,['English'],['US']
-1,It Happened One Night,87.0,1,"['Comedy', 'Romance']",1934,0,['English'],['US']
-0,The Informer,61.0,0,"['Action', 'Drama', 'Thriller', 'Crime']",1935,0,"['English', 'Spanish', 'Polish']",['GB']
-1,Mutiny on the Bounty,87.0,1,"['Adventure', 'Biography', 'Drama', 'History', 'Romance']",1935,0,"['English', 'qah']",['US']
-4,The Awful Truth,87.0,4,"['Comedy', 'Romance']",1937,0,"['English', 'French', 'Italian']",['US']
-3,Gone with the Wind,97.0,3,"['Drama', 'History', 'Romance', 'War']",1939,0,['English'],['USA']
-3,Stagecoach,93.0,3,"['Adventure', 'Drama', 'Western']",1939,0,"['English', 'French', 'Spanish']",['US']
-1,The Grapes of Wrath,96.0,1,"['Drama', 'History']",1940,0,['English'],['US']
-4,The Philadelphia Story,96.0,4,"['Comedy', 'Romance']",1940,0,"['English', 'French']",['US']
-2,Citizen Kane,,2,"['Drama', 'Mystery']",1941,0,['English'],['USA']
+2,Cimarron,70.0,2,"['Drama', 'Western']",1930,0,"['English', 'French']",['US']
+0,The Front Page,76.0,0,['Comedy'],1930,0,['English'],['US']
+0,It Happened One Night,87.0,0,"['Comedy', 'Romance']",1934,0,['English'],['US']
+1,The Informer,61.0,1,"['Action', 'Drama', 'Thriller', 'Crime']",1935,0,"['English', 'Spanish', 'Polish']",['GB']
+0,Mutiny on the Bounty,87.0,0,"['Adventure', 'Biography', 'Drama', 'History', 'Romance']",1935,0,"['English', 'qah']",['US']
+2,The Awful Truth,87.0,2,"['Comedy', 'Romance']",1937,0,"['English', 'French', 'Italian']",['US']
+1,Gone with the Wind,97.0,1,"['Drama', 'History', 'Romance', 'War']",1939,0,['English'],['USA']
+1,Stagecoach,93.0,1,"['Adventure', 'Drama', 'Western']",1939,0,"['English', 'French', 'Spanish']",['US']
+2,The Grapes of Wrath,96.0,2,"['Drama', 'History']",1940,0,['English'],['US']
+1,The Philadelphia Story,96.0,1,"['Comedy', 'Romance']",1940,0,"['English', 'French']",['US']
+4,Citizen Kane,,4,"['Drama', 'Mystery']",1941,0,['English'],['USA']
 4,Random Harvest,62.0,4,"['Drama', 'Romance']",1942,0,['English'],['US']
 0,Yankee Doodle Dandy,89.0,0,"['Biography', 'Drama', 'Musical']",1942,0,['English'],['US']
 0,Casablanca,,0,"['Drama', 'Romance', 'War']",1943,0,"['English', 'German', 'French', 'Italian']",['USA']
 0,Double Indemnity,95.0,0,"['Drama', 'Mystery', 'Thriller', 'Crime', 'Film-Noir']",1944,0,['English'],['US']
-0,Lifeboat,78.0,0,"['Drama', 'War']",1944,0,"['English', 'German', 'French']",['US']
-1,Mildred Pierce,88.0,1,"['Drama', 'Mystery', 'Romance', 'Crime', 'Film-Noir']",1945,0,['English'],['US']
-2,The Best Years of Our Lives,93.0,2,"['Drama', 'Romance', 'War']",1946,0,['English'],['US']
-2,Brief Encounter,92.0,2,"['Drama', 'Romance']",1946,0,"['English', 'French']",['GB']
-3,It's a Wonderful Life,89.0,3,"['Drama', 'Fantasy', 'Family']",1946,0,['English'],['USA']
-1,The Yearling,89.0,1,"['Drama', 'Western', 'Family']",1946,0,['English'],['US']
+1,Lifeboat,78.0,1,"['Drama', 'War']",1944,0,"['English', 'German', 'French']",['US']
+2,Mildred Pierce,88.0,2,"['Drama', 'Mystery', 'Romance', 'Crime', 'Film-Noir']",1945,0,['English'],['US']
+4,The Best Years of Our Lives,93.0,4,"['Drama', 'Romance', 'War']",1946,0,['English'],['US']
+0,Brief Encounter,92.0,0,"['Drama', 'Romance']",1946,0,"['English', 'French']",['GB']
+0,It's a Wonderful Life,89.0,0,"['Drama', 'Fantasy', 'Family']",1946,0,['English'],['USA']
+0,The Yearling,89.0,0,"['Drama', 'Western', 'Family']",1946,0,['English'],['US']
 2,The Bishop's Wife,72.0,2,"['Drama', 'Fantasy', 'Comedy', 'Romance']",1947,0,"['English', 'French']",['US']
-1,Miracle on 34th Street,88.0,1,"['Drama', 'Comedy', 'Family']",1947,0,"['English', 'Dutch']",['US']
-1,The Search,37.0,1,['Drama'],1948,0,"['English', 'French', 'Russian', 'Chechen']","['France', 'Georgia']"
-1,The Treasure of the Sierra Madre,98.0,1,"['Adventure', 'Drama', 'Western']",1948,0,"['English', 'Spanish']",['US']
-0,All About Eve,98.0,0,['Drama'],1950,0,"['English', 'French']",['US']
-2,The Third Man,97.0,2,"['Mystery', 'Thriller', 'Film-Noir']",1950,0,"['English', 'German', 'Russian']",['GB']
-0,The African Queen,91.0,0,"['Adventure', 'Drama', 'Romance', 'War']",1951,0,"['English', 'German', 'Swahili']","['GB', 'US']"
-4,An American in Paris,83.0,4,"['Drama', 'Romance', 'Musical']",1951,0,"['English', 'German', 'French']",['US']
-4,A Place in the Sun,76.0,4,"['Drama', 'Romance']",1951,0,['English'],['US']
-2,A Streetcar Named Desire,97.0,2,['Drama'],1951,0,"['English', 'Spanish']",['US']
+3,Miracle on 34th Street,88.0,3,"['Drama', 'Comedy', 'Family']",1947,0,"['English', 'Dutch']",['US']
+4,The Search,37.0,4,['Drama'],1948,0,"['English', 'French', 'Russian', 'Chechen']","['France', 'Georgia']"
+3,The Treasure of the Sierra Madre,98.0,3,"['Adventure', 'Drama', 'Western']",1948,0,"['English', 'Spanish']",['US']
+3,All About Eve,98.0,3,['Drama'],1950,0,"['English', 'French']",['US']
+3,The Third Man,97.0,3,"['Mystery', 'Thriller', 'Film-Noir']",1950,0,"['English', 'German', 'Russian']",['GB']
+4,The African Queen,91.0,4,"['Adventure', 'Drama', 'Romance', 'War']",1951,0,"['English', 'German', 'Swahili']","['GB', 'US']"
+3,An American in Paris,83.0,3,"['Drama', 'Romance', 'Musical']",1951,0,"['English', 'German', 'French']",['US']
+0,A Place in the Sun,76.0,0,"['Drama', 'Romance']",1951,0,['English'],['US']
+0,A Streetcar Named Desire,97.0,0,['Drama'],1951,0,"['English', 'Spanish']",['US']
 3,High Noon,89.0,3,"['Action', 'Drama', 'Thriller', 'Western']",1952,0,"['English', 'Spanish']","['USA', 'US']"
-0,From Here to Eternity,85.0,0,"['Drama', 'Romance', 'War']",1953,0,['English'],['USA']
-2,Roman Holiday,78.0,2,"['Drama', 'Comedy', 'Romance']",1953,0,"['English', 'German', 'Italian']","['USA', 'Italy']"
-1,Shane,80.0,1,"['Drama', 'Western']",1953,0,['English'],['US']
-0,Stalag 17,84.0,0,"['Drama', 'Comedy', 'War']",1953,0,"['English', 'German', 'Russian']",['US']
-3,On the Waterfront,91.0,3,"['Drama', 'Romance', 'Crime']",1954,0,['English'],['USA']
+1,From Here to Eternity,85.0,1,"['Drama', 'Romance', 'War']",1953,0,['English'],['USA']
+0,Roman Holiday,78.0,0,"['Drama', 'Comedy', 'Romance']",1953,0,"['English', 'German', 'Italian']","['USA', 'Italy']"
+4,Shane,80.0,4,"['Drama', 'Western']",1953,0,['English'],['US']
+4,Stalag 17,84.0,4,"['Drama', 'Comedy', 'War']",1953,0,"['English', 'German', 'Russian']",['US']
+1,On the Waterfront,91.0,1,"['Drama', 'Romance', 'Crime']",1954,0,['English'],['USA']
 0,Rear Window,,0,"['Mystery', 'Thriller']",1954,0,['English'],['US']
 0,Sabrina,72.0,0,"['Drama', 'Comedy', 'Romance']",1954,0,"['English', 'French']",['USA']
-2,The Caine Mutiny,63.0,2,"['Drama', 'War']",1954,0,['English'],['US']
-0,Seven Brides for Seven Brothers,75.0,0,"['Drama', 'Comedy', 'Romance', 'Western', 'Musical']",1954,0,['English'],['US']
+0,The Caine Mutiny,63.0,0,"['Drama', 'War']",1954,0,['English'],['US']
+2,Seven Brides for Seven Brothers,75.0,2,"['Drama', 'Comedy', 'Romance', 'Western', 'Musical']",1954,0,['English'],['US']
 0,East of Eden,72.0,0,['Drama'],1955,0,['English'],['US']
-4,The King and I,72.0,4,"['Biography', 'Drama', 'Romance', 'Musical']",1956,0,"['English', 'Thai']",['US']
-0,The Bridge on the River Kwai,87.0,0,"['Adventure', 'Drama', 'War']",1957,0,"['English', 'Japanese', 'Thai']","['GB', 'US']"
-3,12 Angry Men,96.0,3,"['Drama', 'Crime']",1957,0,['English'],['USA']
-1,Cat on a Hot Tin Roof,84.0,1,['Drama'],1958,0,['English'],['US']
+0,The King and I,72.0,0,"['Biography', 'Drama', 'Romance', 'Musical']",1956,0,"['English', 'Thai']",['US']
+1,The Bridge on the River Kwai,87.0,1,"['Adventure', 'Drama', 'War']",1957,0,"['English', 'Japanese', 'Thai']","['GB', 'US']"
+1,12 Angry Men,96.0,1,"['Drama', 'Crime']",1957,0,['English'],['USA']
+2,Cat on a Hot Tin Roof,84.0,2,['Drama'],1958,0,['English'],['US']
 0,The Defiant Ones,69.0,0,"['Drama', 'Crime']",1958,0,['English'],['US']
-1,Gigi,82.0,1,"['Comedy', 'Romance', 'Musical']",1958,0,"['English', 'French']",['US']
-1,Ben-Hur,90.0,1,"['Adventure', 'Drama', 'History', 'War']",1959,0,['English'],['USA']
-0,The Diary of Anne Frank,59.0,0,"['Biography', 'Drama', 'History', 'War', 'Family']",1959,0,"['English', 'German']",['US']
-0,The Nun's Story,78.0,0,['Drama'],1959,0,['English'],['US']
-4,Room at the Top,84.0,4,"['Drama', 'Romance']",1959,0,['English'],['GB']
-2,Some Like It Hot,98.0,2,"['Comedy', 'Romance']",1959,0,['English'],['US']
-1,Anatomy of a Murder,95.0,1,"['Drama', 'Mystery', 'Thriller', 'Crime']",1959,0,['English'],['US']
-0,The Apartment,94.0,0,"['Drama', 'Comedy', 'Romance']",1960,0,['English'],['US']
-2,Psycho,97.0,2,"['Mystery', 'Thriller', 'Horror']",1960,0,['English'],['USA']
-1,The Sundowners,82.0,1,"['Adventure', 'Drama']",1960,0,['English'],['GB']
-0,The Hustler,90.0,0,"['Drama', 'Sport']",1961,0,['English'],['US']
-3,Judgment at Nuremberg,60.0,3,"['Drama', 'War']",1961,0,"['English', 'German']",['US']
-3,La Dolce Vita,95.0,3,"['Drama', 'Comedy']",1961,0,"['English', 'German', 'French', 'Italian']","['France', 'Italy']"
-4,West Side Story,86.0,4,"['Drama', 'Romance', 'Crime', 'Musical']",1961,0,"['English', 'Spanish']",['US']
-1,The Miracle Worker,83.0,1,"['Biography', 'Drama']",1962,0,"['English', 'ase']",['US']
-1,To Kill a Mockingbird,88.0,1,"['Drama', 'Crime']",1962,0,['English'],['USA']
-4,Million Dollar Baby,86.0,4,"['Drama', 'Sport']",2004,0,"['English', 'Irish Gaelic']",['USA']
-2,Ray,73.0,2,"['Biography', 'Drama', 'Music']",2004,0,['English'],['USA']
-4,Sideways,94.0,4,"['Drama', 'Comedy', 'Romance']",2004,0,"['English', 'Armenian']","['USA', 'Hungary']"
+3,Gigi,82.0,3,"['Comedy', 'Romance', 'Musical']",1958,0,"['English', 'French']",['US']
+3,Ben-Hur,90.0,3,"['Adventure', 'Drama', 'History', 'War']",1959,0,['English'],['USA']
+4,The Diary of Anne Frank,59.0,4,"['Biography', 'Drama', 'History', 'War', 'Family']",1959,0,"['English', 'German']",['US']
+4,The Nun's Story,78.0,4,['Drama'],1959,0,['English'],['US']
+3,Room at the Top,84.0,3,"['Drama', 'Romance']",1959,0,['English'],['GB']
+1,Some Like It Hot,98.0,1,"['Comedy', 'Romance']",1959,0,['English'],['US']
+2,Anatomy of a Murder,95.0,2,"['Drama', 'Mystery', 'Thriller', 'Crime']",1959,0,['English'],['US']
+2,The Apartment,94.0,2,"['Drama', 'Comedy', 'Romance']",1960,0,['English'],['US']
+0,Psycho,97.0,0,"['Mystery', 'Thriller', 'Horror']",1960,0,['English'],['USA']
+2,The Sundowners,82.0,2,"['Adventure', 'Drama']",1960,0,['English'],['GB']
+1,The Hustler,90.0,1,"['Drama', 'Sport']",1961,0,['English'],['US']
+1,Judgment at Nuremberg,60.0,1,"['Drama', 'War']",1961,0,"['English', 'German']",['US']
+0,La Dolce Vita,95.0,0,"['Drama', 'Comedy']",1961,0,"['English', 'German', 'French', 'Italian']","['France', 'Italy']"
+3,West Side Story,86.0,3,"['Drama', 'Romance', 'Crime', 'Musical']",1961,0,"['English', 'Spanish']",['US']
+0,The Miracle Worker,83.0,0,"['Biography', 'Drama']",1962,0,"['English', 'ase']",['US']
+0,To Kill a Mockingbird,88.0,0,"['Drama', 'Crime']",1962,0,['English'],['USA']
+0,Million Dollar Baby,86.0,0,"['Drama', 'Sport']",2004,0,"['English', 'Irish Gaelic']",['USA']
+0,Ray,73.0,0,"['Biography', 'Drama', 'Music']",2004,0,['English'],['USA']
+3,Sideways,94.0,3,"['Drama', 'Comedy', 'Romance']",2004,0,"['English', 'Armenian']","['USA', 'Hungary']"
 3,Brokeback Mountain,87.0,3,"['Drama', 'Romance', 'Western']",2005,0,['English'],"['USA', 'Canada']"
-3,Capote,88.0,3,"['Biography', 'Drama', 'Crime']",2005,0,['English'],"['USA', 'Canada']"
-1,Crash,66.0,1,"['Drama', 'Crime']",2005,0,"['English', 'Mandarin', 'Spanish', 'Persian', 'Korean']","['USA', 'Germany']"
-0,Munich,74.0,0,"['Drama', 'History', 'Thriller']",2005,0,"['English', 'German', 'French', 'Arabic', 'Russian', 'Italian', 'Hebrew', 'Greek']","['USA', 'France', 'Canada']"
-1,Don't Tell,22.0,1,['Drama'],2005,1,['English'],['USA']
+0,Capote,88.0,0,"['Biography', 'Drama', 'Crime']",2005,0,['English'],"['USA', 'Canada']"
+2,Crash,66.0,2,"['Drama', 'Crime']",2005,0,"['English', 'Mandarin', 'Spanish', 'Persian', 'Korean']","['USA', 'Germany']"
+3,Munich,74.0,3,"['Drama', 'History', 'Thriller']",2005,0,"['English', 'German', 'French', 'Arabic', 'Russian', 'Italian', 'Hebrew', 'Greek']","['USA', 'France', 'Canada']"
+2,Don't Tell,22.0,2,['Drama'],2005,1,['English'],['USA']
 2,Paradise Now,71.0,2,"['Drama', 'Crime']",2005,1,"['English', 'Arabic']","['Germany', 'France', 'Israel', 'Netherlands', 'Occupied Palestinian Territory']"
-3,Sophie Scholl: The Final Days,76.0,3,"['Biography', 'Drama', 'History', 'Crime', 'War']",2005,1,['German'],['Germany']
-4,Tsotsi,70.0,4,"['Drama', 'Crime']",2005,1,"['English', 'Afrikaans', 'Xhosa', 'Zulu']","['UK', 'South Africa']"
-1,Babel,69.0,1,['Drama'],2006,0,"['English', 'French', 'Spanish', 'Arabic', 'Japanese', 'Japanese Sign Language', 'Berber']","['USA', 'Mexico', 'France']"
+0,Sophie Scholl: The Final Days,76.0,0,"['Biography', 'Drama', 'History', 'Crime', 'War']",2005,1,['German'],['Germany']
+3,Tsotsi,70.0,3,"['Drama', 'Crime']",2005,1,"['English', 'Afrikaans', 'Xhosa', 'Zulu']","['UK', 'South Africa']"
+0,Babel,69.0,0,['Drama'],2006,0,"['English', 'French', 'Spanish', 'Arabic', 'Japanese', 'Japanese Sign Language', 'Berber']","['USA', 'Mexico', 'France']"
 2,The Departed,85.0,2,"['Mystery', 'Thriller', 'Crime']",2006,0,"['English', 'Cantonese']","['USA', 'Hong Kong']"
-2,Letters from Iwo Jima,89.0,2,"['Drama', 'History', 'War']",2006,0,"['English', 'Japanese']",['USA']
+1,Letters from Iwo Jima,89.0,1,"['Drama', 'History', 'War']",2006,0,"['English', 'Japanese']",['USA']
 0,The Queen,91.0,0,"['Biography', 'Drama']",2006,0,"['English', 'German', 'French']","['UK', 'France', 'Italy']"
 0,United 93,90.0,0,"['Drama', 'History', 'Crime']",2006,0,"['English', 'German', 'Arabic']","['USA', 'UK', 'France']"
-3,The Lives of Others,89.0,3,"['Drama', 'Thriller']",2006,1,['German'],['Germany']
-2,Pan's Labyrinth,98.0,2,"['Drama', 'Mystery', 'Thriller', 'Fantasy', 'War']",2006,1,['Spanish'],"['USA', 'Spain', 'Mexico']"
-4,Water,77.0,4,"['Drama', 'Romance']",2006,1,['Hindi'],"['India', 'Canada']"
-1,Little Miss Sunshine,80.0,1,"['Adventure', 'Drama', 'Comedy']",2006,0,['English'],['USA']
-3,The Diving Bell and the Butterfly,92.0,3,"['Biography', 'Drama']",2007,0,['French'],"['USA', 'France']"
-1,Juno,81.0,1,"['Drama', 'Comedy']",2007,0,['English'],"['USA', 'Canada']"
-2,Michael Clayton,82.0,2,"['Drama', 'Mystery', 'Thriller', 'Crime']",2007,0,['English'],['USA']
-0,No Country for Old Men,91.0,0,"['Drama', 'Thriller', 'Crime', 'Western']",2007,0,"['English', 'Spanish']",['USA']
-1,There Will Be Blood,93.0,1,"['Drama', 'Thriller']",2007,0,"['English', 'American Sign Language']",['USA']
-0,The Counterfeiters,78.0,0,"['Drama', 'Crime', 'War']",2007,1,"['English', 'German', 'Russian', 'Hebrew']","['Germany', 'Austria']"
-2,Katyn,81.0,2,"['Drama', 'History', 'War']",2007,1,"['German', 'Russian', 'Polish']",['Poland']
-4,Mongol: The Rise of Genghis Khan,74.0,4,"['Biography', 'Drama', 'Romance', 'War']",2007,1,"['Mandarin', 'Mongolian']","['Russia', 'Germany', 'Kazakhstan', 'Mongolia']"
-2,12,72.0,2,"['Drama', 'Thriller', 'Crime', 'War']",2007,1,"['Russian', 'Chechen']",['Russia']
-2,Atonement,85.0,2,"['Drama', 'Mystery', 'Romance', 'War']",2007,0,"['English', 'French']","['UK', 'France']"
-2,The Curious Case of Benjamin Button,70.0,2,"['Drama', 'Mystery', 'Fantasy', 'Romance']",2008,0,"['English', 'French', 'Russian']",['USA']
-2,Milk,84.0,2,"['Biography', 'Drama']",2008,0,['English'],['USA']
-3,The Reader,58.0,3,"['Drama', 'Romance']",2008,0,"['English', 'German', 'Latin', 'Greek']","['USA', 'Germany']"
-3,Slumdog Millionaire,84.0,3,"['Drama', 'Romance']",2008,0,"['English', 'French', 'Hindi']",['UK']
-3,The Baader Meinhof Complex,76.0,3,"['Action', 'Biography', 'Drama', 'History', 'Crime']",2008,1,"['English', 'German', 'French', 'Swedish']","['Germany', 'Czech Republic', 'France']"
-1,The Class,92.0,1,['Drama'],2008,1,"['French', 'Spanish', 'Bambara']",['France']
-4,Departures,68.0,4,"['Drama', 'Comedy', 'Music']",2008,1,['Japanese'],['Japan']
-3,Revanche,84.0,3,"['Drama', 'Thriller', 'Romance', 'Crime']",2008,1,"['German', 'Russian']",['Austria']
-4,Waltz with Bashir,91.0,4,"['Biography', 'Drama', 'War', 'Animation']",2008,1,"['English', 'German', 'Arabic', 'Hebrew']","['USA', 'Germany', 'Finland', 'France', 'Israel', 'Australia', 'Belgium', 'Switzerland']"
-1,Avatar,83.0,1,"['Action', 'Adventure', 'Sci-Fi', 'Fantasy']",2009,0,"['English', 'Spanish']",['USA']
-4,The Hurt Locker,95.0,4,"['Action', 'Drama', 'Thriller', 'War']",2009,0,"['English', 'Arabic', 'Turkish']",['USA']
-0,Inglourious Basterds,69.0,0,"['Drama', 'Thriller', 'War']",2009,0,"['English', 'German', 'French', 'Italian']","['USA', 'Germany']"
+0,The Lives of Others,89.0,0,"['Drama', 'Thriller']",2006,1,['German'],['Germany']
+1,Pan's Labyrinth,98.0,1,"['Drama', 'Mystery', 'Thriller', 'Fantasy', 'War']",2006,1,['Spanish'],"['USA', 'Spain', 'Mexico']"
+3,Water,77.0,3,"['Drama', 'Romance']",2006,1,['Hindi'],"['India', 'Canada']"
+3,Little Miss Sunshine,80.0,3,"['Adventure', 'Drama', 'Comedy']",2006,0,['English'],['USA']
+0,The Diving Bell and the Butterfly,92.0,0,"['Biography', 'Drama']",2007,0,['French'],"['USA', 'France']"
+3,Juno,81.0,3,"['Drama', 'Comedy']",2007,0,['English'],"['USA', 'Canada']"
+0,Michael Clayton,82.0,0,"['Drama', 'Mystery', 'Thriller', 'Crime']",2007,0,['English'],['USA']
+2,No Country for Old Men,91.0,2,"['Drama', 'Thriller', 'Crime', 'Western']",2007,0,"['English', 'Spanish']",['USA']
+2,There Will Be Blood,93.0,2,"['Drama', 'Thriller']",2007,0,"['English', 'American Sign Language']",['USA']
+1,The Counterfeiters,78.0,1,"['Drama', 'Crime', 'War']",2007,1,"['English', 'German', 'Russian', 'Hebrew']","['Germany', 'Austria']"
+4,Katyn,81.0,4,"['Drama', 'History', 'War']",2007,1,"['German', 'Russian', 'Polish']",['Poland']
+0,Mongol: The Rise of Genghis Khan,74.0,0,"['Biography', 'Drama', 'Romance', 'War']",2007,1,"['Mandarin', 'Mongolian']","['Russia', 'Germany', 'Kazakhstan', 'Mongolia']"
+1,12,72.0,1,"['Drama', 'Thriller', 'Crime', 'War']",2007,1,"['Russian', 'Chechen']",['Russia']
+3,Atonement,85.0,3,"['Drama', 'Mystery', 'Romance', 'War']",2007,0,"['English', 'French']","['UK', 'France']"
+0,The Curious Case of Benjamin Button,70.0,0,"['Drama', 'Mystery', 'Fantasy', 'Romance']",2008,0,"['English', 'French', 'Russian']",['USA']
+4,Milk,84.0,4,"['Biography', 'Drama']",2008,0,['English'],['USA']
+0,The Reader,58.0,0,"['Drama', 'Romance']",2008,0,"['English', 'German', 'Latin', 'Greek']","['USA', 'Germany']"
+0,Slumdog Millionaire,84.0,0,"['Drama', 'Romance']",2008,0,"['English', 'French', 'Hindi']",['UK']
+1,The Baader Meinhof Complex,76.0,1,"['Action', 'Biography', 'Drama', 'History', 'Crime']",2008,1,"['English', 'German', 'French', 'Swedish']","['Germany', 'Czech Republic', 'France']"
+0,The Class,92.0,0,['Drama'],2008,1,"['French', 'Spanish', 'Bambara']",['France']
+2,Departures,68.0,2,"['Drama', 'Comedy', 'Music']",2008,1,['Japanese'],['Japan']
+2,Revanche,84.0,2,"['Drama', 'Thriller', 'Romance', 'Crime']",2008,1,"['German', 'Russian']",['Austria']
+3,Waltz with Bashir,91.0,3,"['Biography', 'Drama', 'War', 'Animation']",2008,1,"['English', 'German', 'Arabic', 'Hebrew']","['USA', 'Germany', 'Finland', 'France', 'Israel', 'Australia', 'Belgium', 'Switzerland']"
+4,Avatar,83.0,4,"['Action', 'Adventure', 'Sci-Fi', 'Fantasy']",2009,0,"['English', 'Spanish']",['USA']
+0,The Hurt Locker,95.0,0,"['Action', 'Drama', 'Thriller', 'War']",2009,0,"['English', 'Arabic', 'Turkish']",['USA']
+1,Inglourious Basterds,69.0,1,"['Drama', 'Thriller', 'War']",2009,0,"['English', 'German', 'French', 'Italian']","['USA', 'Germany']"
 3,Up in the Air,83.0,3,"['Drama', 'Romance']",2009,0,['English'],['USA']
-1,Ajami,82.0,1,['Drama'],2009,1,"['Arabic', 'Hebrew']","['Germany', 'Israel']"
-3,The Milk of Sorrow,68.0,3,"['Drama', 'Music']",2009,1,"['Spanish', 'Quechua']","['Peru', 'Spain']"
-0,A Prophet,90.0,0,"['Drama', 'Crime']",2009,1,"['French', 'Arabic', 'Corsican']","['France', 'Italy']"
-3,The White Ribbon,82.0,3,"['Drama', 'Mystery', 'Crime']",2009,1,"['German', 'Italian', 'Polish', 'Latin']","['Germany', 'France', 'Italy', 'Austria']"
-2,The Blind Side,53.0,2,"['Biography', 'Drama', 'Sport']",2009,0,['English'],['USA']
-2,District 9,81.0,2,"['Action', 'Sci-Fi', 'Thriller']",2009,0,"['English', 'Nyanja', 'Afrikaans', 'Xhosa', 'Zulu', 'Sotho']","['USA', 'New Zealand']"
-1,An Education,85.0,1,['Drama'],2009,0,"['English', 'French']",['UK']
-1,A Serious Man,83.0,1,['Drama'],2009,0,"['English', 'Yiddish', 'Hebrew']","['USA', 'UK', 'France']"
-4,Up,88.0,4,"['Adventure', 'Drama', 'Comedy', 'Animation', 'Family']",2009,0,['English'],['USA']
-2,Black Swan,79.0,2,"['Drama', 'Thriller']",2010,0,['English'],['USA']
-2,The Fighter,79.0,2,"['Drama', 'Sport']",2010,0,['English'],['USA']
-3,The King's Speech,88.0,3,"['Drama', 'History']",2010,0,['English'],"['UK', 'Australia']"
-4,The Social Network,95.0,4,"['Biography', 'Drama', 'History', 'Comedy']",2010,0,"['English', 'French']",['USA']
+3,Ajami,82.0,3,['Drama'],2009,1,"['Arabic', 'Hebrew']","['Germany', 'Israel']"
+0,The Milk of Sorrow,68.0,0,"['Drama', 'Music']",2009,1,"['Spanish', 'Quechua']","['Peru', 'Spain']"
+1,A Prophet,90.0,1,"['Drama', 'Crime']",2009,1,"['French', 'Arabic', 'Corsican']","['France', 'Italy']"
+4,The White Ribbon,82.0,4,"['Drama', 'Mystery', 'Crime']",2009,1,"['German', 'Italian', 'Polish', 'Latin']","['Germany', 'France', 'Italy', 'Austria']"
+4,The Blind Side,53.0,4,"['Biography', 'Drama', 'Sport']",2009,0,['English'],['USA']
+4,District 9,81.0,4,"['Action', 'Sci-Fi', 'Thriller']",2009,0,"['English', 'Nyanja', 'Afrikaans', 'Xhosa', 'Zulu', 'Sotho']","['USA', 'New Zealand']"
+0,An Education,85.0,0,['Drama'],2009,0,"['English', 'French']",['UK']
+0,A Serious Man,83.0,0,['Drama'],2009,0,"['English', 'Yiddish', 'Hebrew']","['USA', 'UK', 'France']"
+3,Up,88.0,3,"['Adventure', 'Drama', 'Comedy', 'Animation', 'Family']",2009,0,['English'],['USA']
+3,Black Swan,79.0,3,"['Drama', 'Thriller']",2010,0,['English'],['USA']
+0,The Fighter,79.0,0,"['Drama', 'Sport']",2010,0,['English'],['USA']
+1,The King's Speech,88.0,1,"['Drama', 'History']",2010,0,['English'],"['UK', 'Australia']"
+3,The Social Network,95.0,3,"['Biography', 'Drama', 'History', 'Comedy']",2010,0,"['English', 'French']",['USA']
 0,True Grit,80.0,0,"['Drama', 'Western']",2010,0,['English'],['USA']
-3,Biutiful,58.0,3,['Drama'],2010,1,"['English', 'Spanish']","['Spain', 'Mexico']"
-4,Dogtooth,73.0,4,['Drama'],2010,1,['Greek'],['Greece']
-1,In a Better World,65.0,1,['Drama'],2010,1,"['English', 'Danish', 'Swedish']","['Denmark', 'Sweden']"
+1,Biutiful,58.0,1,['Drama'],2010,1,"['English', 'Spanish']","['Spain', 'Mexico']"
+0,Dogtooth,73.0,0,['Drama'],2010,1,['Greek'],['Greece']
+2,In a Better World,65.0,2,['Drama'],2010,1,"['English', 'Danish', 'Swedish']","['Denmark', 'Sweden']"
 4,Incendies,80.0,4,['Drama'],2010,1,"['French', 'Arabic']","['France', 'Canada']"
-4,Inception,74.0,4,"['Action', 'Sci-Fi', 'Drama', 'Mystery', 'Thriller']",2010,0,"['English', 'French', 'Japanese']","['USA', 'UK']"
-3,The Kids Are All Right,86.0,3,"['Drama', 'Comedy']",2010,0,['English'],['USA']
+0,Inception,74.0,0,"['Action', 'Sci-Fi', 'Drama', 'Mystery', 'Thriller']",2010,0,"['English', 'French', 'Japanese']","['USA', 'UK']"
+4,The Kids Are All Right,86.0,4,"['Drama', 'Comedy']",2010,0,['English'],['USA']
 3,127 Hours,82.0,3,"['Adventure', 'Biography', 'Drama', 'Thriller']",2010,0,['English'],"['USA', 'UK']"
-1,Toy Story 3,92.0,1,"['Adventure', 'Fantasy', 'Comedy', 'Animation', 'Family']",2010,0,"['English', 'Spanish']",['USA']
-3,Winter's Bone,90.0,3,"['Drama', 'Thriller']",2010,0,['English'],['USA']
+2,Toy Story 3,92.0,2,"['Adventure', 'Fantasy', 'Comedy', 'Animation', 'Family']",2010,0,"['English', 'Spanish']",['USA']
+4,Winter's Bone,90.0,4,"['Drama', 'Thriller']",2010,0,['English'],['USA']
 0,The Artist,89.0,0,['Romance'],2011,0,['English'],['France']
-1,The Descendants,84.0,1,"['Drama', 'Comedy']",2011,0,,['USA']
-2,Hugo ,83.0,2,"['Mystery', 'Family']",2011,0,,['USA']
-4,Midnight in Paris,81.0,4,"['Comedy', 'Romance']",2011,0,['English'],"['USA', 'Spain']"
+2,The Descendants,84.0,2,"['Drama', 'Comedy']",2011,0,,['USA']
+0,Hugo ,83.0,0,"['Mystery', 'Family']",2011,0,,['USA']
+0,Midnight in Paris,81.0,0,"['Comedy', 'Romance']",2011,0,['English'],"['USA', 'Spain']"
 3,The Tree of Life,85.0,3,"['Drama', 'Fantasy']",2011,0,['English'],['USA']
-1,Bullhead,68.0,1,"['Drama', 'Crime']",2011,1,"['French', 'Dutch', 'Flemish']",['Belgium']
-3,Footnote,83.0,3,['Drama'],2011,1,['Hebrew'],['Israel']
-3,In Darkness,74.0,3,['Drama'],2011,1,"['German', 'Polish', 'Yiddish', 'Ukrainian']","['Germany', 'Poland']"
-1,Monsieur Lazhar,82.0,1,"['Drama', 'Comedy']",2011,1,"['English', 'French', 'Arabic']",['Canada']
-1,A Separation,95.0,1,['Drama'],2011,1,['Persian'],['Iran']
-1,The Help,62.0,1,['Drama'],2011,0,,
-1,Moneyball,87.0,1,['Drama'],2011,0,,
+0,Bullhead,68.0,0,"['Drama', 'Crime']",2011,1,"['French', 'Dutch', 'Flemish']",['Belgium']
+1,Footnote,83.0,1,['Drama'],2011,1,['Hebrew'],['Israel']
+2,In Darkness,74.0,2,['Drama'],2011,1,"['German', 'Polish', 'Yiddish', 'Ukrainian']","['Germany', 'Poland']"
+0,Monsieur Lazhar,82.0,0,"['Drama', 'Comedy']",2011,1,"['English', 'French', 'Arabic']",['Canada']
+4,A Separation,95.0,4,['Drama'],2011,1,['Persian'],['Iran']
+3,The Help,62.0,3,['Drama'],2011,0,,
+0,Moneyball,87.0,0,['Drama'],2011,0,,
 3,War Horse,72.0,3,['War'],2011,0,['English'],"['USA', 'UK']"
-1,Amour,94.0,1,"['Drama', 'Romance']",2012,0,"['English', 'French']","['Germany', 'France', 'Austria']"
-2,Beasts of the Southern Wild,86.0,2,"['Drama', 'Fantasy']",2012,0,['English'],['USA']
-2,Life of Pi,79.0,2,"['Adventure', 'Drama']",2012,0,"['English', 'French', 'Tamil']","['USA', 'China', 'Taiwan']"
-2,Lincoln,86.0,2,"['Biography', 'Drama', 'History', 'War']",2012,0,['English'],"['USA', 'India']"
-1,Silver Linings Playbook,81.0,1,"['Drama', 'Comedy', 'Romance']",2012,0,['English'],['USA']
-0,Kon-Tiki,62.0,0,"['Action', 'Adventure', 'Biography', 'Drama', 'History']",2012,1,"['English', 'French', 'Swedish', 'Norwegian']","['Germany', 'UK', 'Norway', 'Denmark', 'Sweden']"
-1,A Royal Affair,73.0,1,"['Drama', 'History', 'Romance']",2012,1,"['English', 'German', 'French', 'Danish']","['Czech Republic', 'Denmark', 'Sweden']"
-0,War Witch,84.0,0,"['Drama', 'War']",2012,1,"['French', 'Lingala']",['Canada']
-0,Argo,86.0,0,['Drama'],2012,0,,['USA']
-0,Django Unchained,81.0,0,"['Action', 'Adventure', 'Drama', 'Crime', 'Western']",2012,0,"['English', 'German', 'French']",['USA']
-2,Zero Dark Thirty,95.0,2,"['Action', 'Drama', 'History', 'Thriller']",2012,0,"['English', 'Arabic']",['USA']
-1,American Hustle,90.0,1,"['Drama', 'History', 'Thriller', 'Crime']",2013,0,"['English', 'Arabic']",['USA']
-0,Gravity,96.0,0,"['Sci-Fi', 'Drama', 'Mystery', 'Thriller']",2013,0,"['English', 'Spanish', 'Greenlandic']","['USA', 'UK']"
-1,Nebraska,87.0,1,"['Adventure', 'Drama']",2013,0,"['English', 'Spanish']",['USA']
-2,12 Years a Slave,96.0,2,"['Biography', 'Drama', 'History']",2013,0,['English'],"['USA', 'UK']"
-3,The Wolf of Wall Street,75.0,3,"['Biography', 'Drama', 'Comedy', 'Crime']",2013,0,"['English', 'French']",['USA']
-1,The Broken Circle Breakdown,70.0,1,"['Drama', 'Romance', 'Music']",2013,1,"['English', 'Flemish']","['Netherlands', 'Belgium']"
-4,The Great Beauty,86.0,4,"['Drama', 'Comedy']",2013,1,"['Spanish', 'Chinese', 'Italian', 'Japanese']","['France', 'Italy']"
-4,The Missing Picture,87.0,4,['Documentary'],2013,1,['French'],"['France', 'Cambodia']"
-1,Omar,75.0,1,"['Drama', 'Thriller']",2013,1,"['Arabic', 'Hebrew']",['Occupied Palestinian Territory']
-0,Captain Phillips,82.0,0,"['Action', 'Adventure', 'Biography', 'Drama', 'Thriller', 'Crime']",2013,0,"['English', 'Somali']",['USA']
-3,Dallas Buyers Club,80.0,3,"['Biography', 'Drama', 'History']",2013,0,"['English', 'Japanese']",['USA']
-2,Her,90.0,2,"['Sci-Fi', 'Drama', 'Comedy', 'Romance']",2013,0,['English'],['USA']
-1,Philomena,77.0,1,['Drama'],2013,0,['English'],"['USA', 'UK', 'France']"
-3,Boyhood,,3,['Drama'],2014,0,"['English', 'Spanish']",['USA']
-3,Foxcatcher,81.0,3,"['Biography', 'Drama', 'Sport', 'Thriller']",2014,0,['English'],['USA']
-1,The Grand Budapest Hotel,88.0,1,"['Drama', 'Comedy']",2014,0,"['English', 'French']","['USA', 'Germany', 'UK']"
-3,The Imitation Game,73.0,3,"['Biography', 'Drama', 'Thriller', 'War']",2014,0,"['English', 'German']","['USA', 'UK']"
-2,Ida,91.0,2,['Drama'],2014,1,['Polish'],"['Poland', 'Denmark']"
-1,Leviathan,92.0,1,['Drama'],2014,1,['Russian'],['Russia']
-4,Tangerines,73.0,4,"['Drama', 'History', 'War']",2014,1,"['Russian', 'Estonian', 'Georgian']","['Estonia', 'Georgia']"
-4,Timbuktu,92.0,4,['Drama'],2014,1,"['English', 'French', 'Arabic', 'Bambara', 'Songhay']","['France', 'Mauritania']"
-2,Wild Tales,77.0,2,"['Drama', 'Thriller', 'Comedy']",2014,1,['Spanish'],"['Argentina', 'Spain']"
-2,American Sniper,72.0,2,"['Action', 'Biography', 'Drama', 'War']",2014,0,['English'],['USA']
-1,Selma,81.0,1,"['Biography', 'Drama', 'History']",2014,0,['English'],"['USA', 'UK']"
+2,Amour,94.0,2,"['Drama', 'Romance']",2012,0,"['English', 'French']","['Germany', 'France', 'Austria']"
+4,Beasts of the Southern Wild,86.0,4,"['Drama', 'Fantasy']",2012,0,['English'],['USA']
+0,Life of Pi,79.0,0,"['Adventure', 'Drama']",2012,0,"['English', 'French', 'Tamil']","['USA', 'China', 'Taiwan']"
+4,Lincoln,86.0,4,"['Biography', 'Drama', 'History', 'War']",2012,0,['English'],"['USA', 'India']"
+2,Silver Linings Playbook,81.0,2,"['Drama', 'Comedy', 'Romance']",2012,0,['English'],['USA']
+3,Kon-Tiki,62.0,3,"['Action', 'Adventure', 'Biography', 'Drama', 'History']",2012,1,"['English', 'French', 'Swedish', 'Norwegian']","['Germany', 'UK', 'Norway', 'Denmark', 'Sweden']"
+0,A Royal Affair,73.0,0,"['Drama', 'History', 'Romance']",2012,1,"['English', 'German', 'French', 'Danish']","['Czech Republic', 'Denmark', 'Sweden']"
+1,War Witch,84.0,1,"['Drama', 'War']",2012,1,"['French', 'Lingala']",['Canada']
+1,Argo,86.0,1,['Drama'],2012,0,,['USA']
+2,Django Unchained,81.0,2,"['Action', 'Adventure', 'Drama', 'Crime', 'Western']",2012,0,"['English', 'German', 'French']",['USA']
+0,Zero Dark Thirty,95.0,0,"['Action', 'Drama', 'History', 'Thriller']",2012,0,"['English', 'Arabic']",['USA']
+0,American Hustle,90.0,0,"['Drama', 'History', 'Thriller', 'Crime']",2013,0,"['English', 'Arabic']",['USA']
+4,Gravity,96.0,4,"['Sci-Fi', 'Drama', 'Mystery', 'Thriller']",2013,0,"['English', 'Spanish', 'Greenlandic']","['USA', 'UK']"
+3,Nebraska,87.0,3,"['Adventure', 'Drama']",2013,0,"['English', 'Spanish']",['USA']
+0,12 Years a Slave,96.0,0,"['Biography', 'Drama', 'History']",2013,0,['English'],"['USA', 'UK']"
+0,The Wolf of Wall Street,75.0,0,"['Biography', 'Drama', 'Comedy', 'Crime']",2013,0,"['English', 'French']",['USA']
+2,The Broken Circle Breakdown,70.0,2,"['Drama', 'Romance', 'Music']",2013,1,"['English', 'Flemish']","['Netherlands', 'Belgium']"
+2,The Great Beauty,86.0,2,"['Drama', 'Comedy']",2013,1,"['Spanish', 'Chinese', 'Italian', 'Japanese']","['France', 'Italy']"
+0,The Missing Picture,87.0,0,['Documentary'],2013,1,['French'],"['France', 'Cambodia']"
+0,Omar,75.0,0,"['Drama', 'Thriller']",2013,1,"['Arabic', 'Hebrew']",['Occupied Palestinian Territory']
+1,Captain Phillips,82.0,1,"['Action', 'Adventure', 'Biography', 'Drama', 'Thriller', 'Crime']",2013,0,"['English', 'Somali']",['USA']
+1,Dallas Buyers Club,80.0,1,"['Biography', 'Drama', 'History']",2013,0,"['English', 'Japanese']",['USA']
+3,Her,90.0,3,"['Sci-Fi', 'Drama', 'Comedy', 'Romance']",2013,0,['English'],['USA']
+2,Philomena,77.0,2,['Drama'],2013,0,['English'],"['USA', 'UK', 'France']"
+0,Boyhood,,0,['Drama'],2014,0,"['English', 'Spanish']",['USA']
+0,Foxcatcher,81.0,0,"['Biography', 'Drama', 'Sport', 'Thriller']",2014,0,['English'],['USA']
+3,The Grand Budapest Hotel,88.0,3,"['Drama', 'Comedy']",2014,0,"['English', 'French']","['USA', 'Germany', 'UK']"
+4,The Imitation Game,73.0,4,"['Biography', 'Drama', 'Thriller', 'War']",2014,0,"['English', 'German']","['USA', 'UK']"
+4,Ida,91.0,4,['Drama'],2014,1,['Polish'],"['Poland', 'Denmark']"
+2,Leviathan,92.0,2,['Drama'],2014,1,['Russian'],['Russia']
+1,Tangerines,73.0,1,"['Drama', 'History', 'War']",2014,1,"['Russian', 'Estonian', 'Georgian']","['Estonia', 'Georgia']"
+2,Timbuktu,92.0,2,['Drama'],2014,1,"['English', 'French', 'Arabic', 'Bambara', 'Songhay']","['France', 'Mauritania']"
+1,Wild Tales,77.0,1,"['Drama', 'Thriller', 'Comedy']",2014,1,['Spanish'],"['Argentina', 'Spain']"
+4,American Sniper,72.0,4,"['Action', 'Biography', 'Drama', 'War']",2014,0,['English'],['USA']
+2,Selma,81.0,2,"['Biography', 'Drama', 'History']",2014,0,['English'],"['USA', 'UK']"
 0,The Theory of Everything,72.0,0,"['Biography', 'Drama', 'Romance']",2014,0,"['English', 'French']",['UK']
-1,Whiplash,88.0,1,"['Drama', 'Music']",2014,0,['English'],['USA']
-1,The Big Short,81.0,1,"['Biography', 'Drama', 'Comedy']",2015,0,['English'],['USA']
-0,The Revenant,76.0,0,"['Adventure', 'Drama', 'Thriller', 'Western']",2015,0,"['English', 'French', 'Pawnee']",['USA']
-2,Room,86.0,2,['Drama'],2015,0,['English'],"['USA', 'UK', 'Canada', 'Ireland']"
+2,Whiplash,88.0,2,"['Drama', 'Music']",2014,0,['English'],['USA']
+2,The Big Short,81.0,2,"['Biography', 'Drama', 'Comedy']",2015,0,['English'],['USA']
+3,The Revenant,76.0,3,"['Adventure', 'Drama', 'Thriller', 'Western']",2015,0,"['English', 'French', 'Pawnee']",['USA']
+0,Room,86.0,0,['Drama'],2015,0,['English'],"['USA', 'UK', 'Canada', 'Ireland']"
 3,Spotlight,93.0,3,"['Biography', 'Drama', 'History', 'Thriller']",2015,0,['English'],['USA']
-2,Embrace of the Serpent,82.0,2,"['Adventure', 'Drama', 'History']",2015,1,"['German', 'Spanish', 'Latin', 'Portuguese', 'Catalan']","['Argentina', 'Venezuela', 'Colombia']"
-1,Mustang,83.0,1,['Drama'],2015,1,['Turkish'],"['Turkey', 'Germany', 'France', 'Qatar']"
+3,Embrace of the Serpent,82.0,3,"['Adventure', 'Drama', 'History']",2015,1,"['German', 'Spanish', 'Latin', 'Portuguese', 'Catalan']","['Argentina', 'Venezuela', 'Colombia']"
+4,Mustang,83.0,4,['Drama'],2015,1,['Turkish'],"['Turkey', 'Germany', 'France', 'Qatar']"
 1,Son of Saul,91.0,1,"['Drama', 'History', 'Thriller', 'Horror', 'War']",2015,1,"['German', 'French', 'Russian', 'Polish', 'Yiddish', 'Hungarian', 'Greek', 'Slovak']","['USA', 'Hungary', 'France', 'Israel', 'Bosnia and Herzegovina']"
 0,Theeb,80.0,0,"['Adventure', 'Drama', 'Thriller']",2015,1,['Arabic'],"['UK', 'United Arab Emirates', 'Jordan', 'Qatar']"
 1,A War,81.0,1,"['Drama', 'War']",2015,1,"['English', 'Arabic', 'Danish']",['Denmark']
-2,Bridge of Spies,81.0,2,"['Biography', 'Drama', 'History', 'Thriller']",2015,0,"['English', 'German', 'Russian']","['USA', 'Germany', 'India']"
-2,Brooklyn,88.0,2,"['Drama', 'Comedy', 'Romance']",2015,0,['English'],"['UK', 'Canada', 'Ireland']"
-0,The Martian,80.0,0,"['Action', 'Adventure', 'Sci-Fi', 'Drama', 'Comedy']",2015,0,"['English', 'Mandarin']","['USA', 'UK']"
-3,Arrival,81.0,3,"['Sci-Fi', 'Drama', 'Mystery', 'Thriller']",2016,0,"['English', 'Mandarin', 'Russian']",['USA']
-2,Hacksaw Ridge,71.0,2,"['Biography', 'Drama', 'History', 'Romance', 'War']",2016,0,"['English', 'Japanese']","['USA', 'Australia']"
-4,La La Land,94.0,4,"['Drama', 'Comedy', 'Romance', 'Musical']",2016,0,['English'],"['USA', 'Hong Kong']"
-1,Manchester by the Sea,96.0,1,['Drama'],2016,0,['English'],['USA']
-4,Moonlight,99.0,4,['Drama'],2016,0,['English'],['USA']
-2,Land of Mine,75.0,2,"['Drama', 'History', 'War']",2016,1,"['English', 'German', 'Danish']","['Germany', 'Denmark']"
-4,A Man Called Ove,70.0,4,"['Drama', 'Comedy']",2016,1,"['Swedish', 'Persian']",['Sweden']
-2,The Salesman,85.0,2,"['Drama', 'Thriller']",2016,1,"['English', 'Persian']","['France', 'Iran']"
-0,Tanna,75.0,0,"['Drama', 'Romance']",2016,1,,"['Australia', 'Vanuatu']"
-3,Toni Erdmann,93.0,3,"['Drama', 'Comedy']",2016,1,"['English', 'German', 'Romanian']","['Germany', 'Austria', 'Romania', 'Switzerland']"
-1,Fences,79.0,1,['Drama'],2016,0,['English'],['USA']
-1,Hell or High Water,88.0,1,"['Drama', 'Crime']",2016,0,['English'],['USA']
-0,Hidden Figures,74.0,0,"['Biography', 'Drama', 'History']",2016,0,['English'],['USA']
-1,Lion,69.0,1,['Drama'],2016,0,"['English', 'Hindi', 'Bengali']","['USA', 'UK', 'Australia']"
-0,Dunkirk,94.0,0,"['Action', 'Drama', 'History', 'Thriller', 'War']",2017,0,"['English', 'German', 'French']","['USA', 'UK', 'France', 'Netherlands', 'GB', 'US', 'FR', 'NL']"
-2,Get Out,85.0,2,"['Mystery', 'Thriller', 'Horror', 'Comedy']",2017,0,['English'],['USA']
-4,Lady Bird,94.0,4,"['Drama', 'Comedy']",2017,0,"['English', 'French', 'Latin']",['US']
-4,Phantom Thread,90.0,4,"['Drama', 'Romance', 'Crime']",2017,0,"['English', 'French']","['USA', 'GB', 'US']"
+0,Bridge of Spies,81.0,0,"['Biography', 'Drama', 'History', 'Thriller']",2015,0,"['English', 'German', 'Russian']","['USA', 'Germany', 'India']"
+3,Brooklyn,88.0,3,"['Drama', 'Comedy', 'Romance']",2015,0,['English'],"['UK', 'Canada', 'Ireland']"
+4,The Martian,80.0,4,"['Action', 'Adventure', 'Sci-Fi', 'Drama', 'Comedy']",2015,0,"['English', 'Mandarin']","['USA', 'UK']"
+0,Arrival,81.0,0,"['Sci-Fi', 'Drama', 'Mystery', 'Thriller']",2016,0,"['English', 'Mandarin', 'Russian']",['USA']
+1,Hacksaw Ridge,71.0,1,"['Biography', 'Drama', 'History', 'Romance', 'War']",2016,0,"['English', 'Japanese']","['USA', 'Australia']"
+3,La La Land,94.0,3,"['Drama', 'Comedy', 'Romance', 'Musical']",2016,0,['English'],"['USA', 'Hong Kong']"
+4,Manchester by the Sea,96.0,4,['Drama'],2016,0,['English'],['USA']
+0,Moonlight,99.0,0,['Drama'],2016,0,['English'],['USA']
+4,Land of Mine,75.0,4,"['Drama', 'History', 'War']",2016,1,"['English', 'German', 'Danish']","['Germany', 'Denmark']"
+3,A Man Called Ove,70.0,3,"['Drama', 'Comedy']",2016,1,"['Swedish', 'Persian']",['Sweden']
+4,The Salesman,85.0,4,"['Drama', 'Thriller']",2016,1,"['English', 'Persian']","['France', 'Iran']"
+1,Tanna,75.0,1,"['Drama', 'Romance']",2016,1,,"['Australia', 'Vanuatu']"
+4,Toni Erdmann,93.0,4,"['Drama', 'Comedy']",2016,1,"['English', 'German', 'Romanian']","['Germany', 'Austria', 'Romania', 'Switzerland']"
+2,Fences,79.0,2,['Drama'],2016,0,['English'],['USA']
+2,Hell or High Water,88.0,2,"['Drama', 'Crime']",2016,0,['English'],['USA']
+1,Hidden Figures,74.0,1,"['Biography', 'Drama', 'History']",2016,0,['English'],['USA']
+4,Lion,69.0,4,['Drama'],2016,0,"['English', 'Hindi', 'Bengali']","['USA', 'UK', 'Australia']"
+1,Dunkirk,94.0,1,"['Action', 'Drama', 'History', 'Thriller', 'War']",2017,0,"['English', 'German', 'French']","['USA', 'UK', 'France', 'Netherlands', 'GB', 'US', 'FR', 'NL']"
+0,Get Out,85.0,0,"['Mystery', 'Thriller', 'Horror', 'Comedy']",2017,0,['English'],['USA']
+2,Lady Bird,94.0,2,"['Drama', 'Comedy']",2017,0,"['English', 'French', 'Latin']",['US']
+0,Phantom Thread,90.0,0,"['Drama', 'Romance', 'Crime']",2017,0,"['English', 'French']","['USA', 'GB', 'US']"
 4,The Shape of Water,87.0,4,"['Adventure', 'Drama', 'Thriller', 'Fantasy', 'Horror', 'Romance', 'War']",2017,0,"['English', 'French', 'Russian', 'American Sign Language', 'ase']","['USA', 'US', 'CA']"
-1,A Fantastic Woman,86.0,1,['Drama'],2017,1,['Spanish'],"['USA', 'Germany', 'Spain', 'Chile', 'DE', 'US', 'ES', 'CL']"
-1,The Insult,72.0,1,"['Drama', 'Thriller']",2017,1,['Arabic'],"['US', 'FR', 'BE', 'LB', 'CY']"
-1,Loveless,86.0,1,['Drama'],2017,1,['Russian'],"['France', 'DE', 'RU', 'FR', 'BE']"
-4,On Body and Soul,77.0,4,"['Drama', 'Romance']",2017,1,['Hungarian'],"['Hungary', 'HU']"
-1,The Square,73.0,1,"['Drama', 'Comedy']",2017,1,"['English', 'Danish', 'Swedish']","['Germany', 'France', 'Denmark', 'Sweden', 'DE', 'FR', 'DK', 'SE']"
-1,Call Me by Your Name,93.0,1,"['Drama', 'Romance']",2017,0,"['English', 'German', 'French', 'Italian', 'Hebrew']","['USA', 'Brazil', 'France', 'Italy', 'US', 'FR', 'BR', 'IT']"
-0,Darkest Hour,75.0,0,"['Biography', 'Drama', 'History', 'War']",2017,0,"['English', 'German', 'French']","['UK', 'GB', 'US']"
+0,A Fantastic Woman,86.0,0,['Drama'],2017,1,['Spanish'],"['USA', 'Germany', 'Spain', 'Chile', 'DE', 'US', 'ES', 'CL']"
+2,The Insult,72.0,2,"['Drama', 'Thriller']",2017,1,['Arabic'],"['US', 'FR', 'BE', 'LB', 'CY']"
+2,Loveless,86.0,2,['Drama'],2017,1,['Russian'],"['France', 'DE', 'RU', 'FR', 'BE']"
+3,On Body and Soul,77.0,3,"['Drama', 'Romance']",2017,1,['Hungarian'],"['Hungary', 'HU']"
+2,The Square,73.0,2,"['Drama', 'Comedy']",2017,1,"['English', 'Danish', 'Swedish']","['Germany', 'France', 'Denmark', 'Sweden', 'DE', 'FR', 'DK', 'SE']"
+2,Call Me by Your Name,93.0,2,"['Drama', 'Romance']",2017,0,"['English', 'German', 'French', 'Italian', 'Hebrew']","['USA', 'Brazil', 'France', 'Italy', 'US', 'FR', 'BR', 'IT']"
+4,Darkest Hour,75.0,4,"['Biography', 'Drama', 'History', 'War']",2017,0,"['English', 'German', 'French']","['UK', 'GB', 'US']"
 0,The Post,83.0,0,"['Biography', 'Drama', 'History', 'Thriller']",2017,0,['English'],"['USA', 'GB', 'US']"
-0,Vice,61.0,0,"['Biography', 'Drama', 'History', 'Comedy']",2018,0,"['English', 'Arabic']",['US']
-0,The Favourite,91.0,0,"['Biography', 'Drama', 'History', 'Comedy']",2018,0,['English'],"['GB', 'US', 'IE']"
+3,Vice,61.0,3,"['Biography', 'Drama', 'History', 'Comedy']",2018,0,"['English', 'Arabic']",['US']
+3,The Favourite,91.0,3,"['Biography', 'Drama', 'History', 'Comedy']",2018,0,['English'],"['GB', 'US', 'IE']"
 0,Cold War,90.0,0,"['Drama', 'Romance', 'Music']",2018,0,"['German', 'French', 'Russian', 'Italian', 'Polish', 'Croatian']","['GB', 'FR', 'PL']"
-4,BlacKkKlansman,83.0,4,"['Biography', 'Drama', 'Comedy', 'Crime']",2018,0,['English'],['US']
+1,BlacKkKlansman,83.0,1,"['Biography', 'Drama', 'Comedy', 'Crime']",2018,0,['English'],['US']
 4,Roma,96.0,4,['Drama'],2018,0,"['English', 'German', 'French', 'Spanish', 'Japanese', 'Norwegian', 'nai']","['US', 'MX']"
-1,Capernaum,75.0,1,['Drama'],2018,1,"['Arabic', 'Amharic']","['US', 'FR', 'LB']"
-4,Never Look Away,68.0,4,"['Drama', 'History', 'Thriller', 'Romance']",2018,1,"['German', 'Russian']","['DE', 'IT']"
-1,Shoplifters,93.0,1,"['Drama', 'Crime']",2018,1,['Japanese'],['JP']
-2,A Star Is Born,88.0,2,"['Drama', 'Romance', 'Music', 'Musical']",2018,0,['English'],"['USA', 'US']"
-3,Bohemian Rhapsody,49.0,3,"['Biography', 'Drama', 'Music']",2018,0,['English'],"['USA', 'UK', 'GB', 'US']"
-1,Green Book,69.0,1,"['Biography', 'Drama', 'History', 'Comedy', 'Music']",2018,0,"['English', 'German', 'Russian', 'Italian']",['US']
-2,Black Panther,88.0,2,"['Action', 'Adventure', 'Sci-Fi', 'Drama']",2018,0,"['English', 'Korean', 'Swahili', 'Xhosa', 'qba']","['USA', 'US']"
+0,Capernaum,75.0,0,['Drama'],2018,1,"['Arabic', 'Amharic']","['US', 'FR', 'LB']"
+3,Never Look Away,68.0,3,"['Drama', 'History', 'Thriller', 'Romance']",2018,1,"['German', 'Russian']","['DE', 'IT']"
+2,Shoplifters,93.0,2,"['Drama', 'Crime']",2018,1,['Japanese'],['JP']
+3,A Star Is Born,88.0,3,"['Drama', 'Romance', 'Music', 'Musical']",2018,0,['English'],"['USA', 'US']"
+2,Bohemian Rhapsody,49.0,2,"['Biography', 'Drama', 'Music']",2018,0,['English'],"['USA', 'UK', 'GB', 'US']"
+3,Green Book,69.0,3,"['Biography', 'Drama', 'History', 'Comedy', 'Music']",2018,0,"['English', 'German', 'Russian', 'Italian']",['US']
+4,Black Panther,88.0,4,"['Action', 'Adventure', 'Sci-Fi', 'Drama']",2018,0,"['English', 'Korean', 'Swahili', 'Xhosa', 'qba']","['USA', 'US']"
 4,The Irishman,94.0,4,"['Biography', 'Drama', 'History', 'Thriller', 'Crime']",2019,0,"['English', 'German', 'Spanish', 'Italian', 'Latin']",['US']
-4,Joker,59.0,4,"['Action', 'Adventure', 'Drama', 'Thriller', 'Fantasy', 'Crime']",2019,0,['English'],"['US', 'CA']"
-0,1917,78.0,0,"['Drama', 'War']",2019,0,"['English', 'German', 'French']","['GB', 'US', 'IN', 'CA', 'ES']"
-2,Parasite,96.0,2,"['Drama', 'Thriller', 'Comedy']",2019,0,"['English', 'Korean']",['KR']
-1,Corpus Christi,77.0,1,['Drama'],2019,1,['Polish'],['PL']
+0,Joker,59.0,0,"['Action', 'Adventure', 'Drama', 'Thriller', 'Fantasy', 'Crime']",2019,0,['English'],"['US', 'CA']"
+1,1917,78.0,1,"['Drama', 'War']",2019,0,"['English', 'German', 'French']","['GB', 'US', 'IN', 'CA', 'ES']"
+4,Parasite,96.0,4,"['Drama', 'Thriller', 'Comedy']",2019,0,"['English', 'Korean']",['KR']
+2,Corpus Christi,77.0,2,['Drama'],2019,1,['Polish'],['PL']
 2,Honeyland,86.0,2,"['Drama', 'Documentary']",2019,1,['Turkish'],['MK']
-3,Pain and Glory,87.0,3,['Drama'],2019,1,['Spanish'],"['FR', 'ES']"
-1,Marriage Story,94.0,1,"['Drama', 'Comedy', 'Romance']",2019,0,['English'],"['GB', 'US']"
-3,Little Women,91.0,3,"['Drama', 'Romance']",2019,0,"['English', 'French']",['US']
-2,Jojo Rabbit,58.0,2,"['Drama', 'Comedy', 'War']",2019,0,"['English', 'German']","['DE', 'US', 'NZ', 'CZ']"
+0,Pain and Glory,87.0,0,['Drama'],2019,1,['Spanish'],"['FR', 'ES']"
+2,Marriage Story,94.0,2,"['Drama', 'Comedy', 'Romance']",2019,0,['English'],"['GB', 'US']"
+0,Little Women,91.0,0,"['Drama', 'Romance']",2019,0,"['English', 'French']",['US']
+4,Jojo Rabbit,58.0,4,"['Drama', 'Comedy', 'War']",2019,0,"['English', 'German']","['DE', 'US', 'NZ', 'CZ']"
 1,Ford v Ferrari,81.0,1,"['Action', 'Biography', 'Drama', 'Sport']",2019,0,"['English', 'French', 'Italian', 'Japanese']","['US', 'FR']"

@@ -37,6 +37,7 @@ class CSVParser:
                     try:
                         movie = Movie(*line)
                     except Exception as e:
+                        print(e)
                         continue
                     print(movie)
                     if movie.url and movie.summary and not movie.corrupted and not movie in self.movies:

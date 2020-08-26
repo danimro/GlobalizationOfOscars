@@ -18,6 +18,13 @@ import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from metacritic_extraction import Movie
 import pickle
+import plotly.express as px
+import chart_studio
+import os  # for os.path.basename
+
+from sklearn.manifold import MDS
+
+chart_studio.tools.set_credentials_file(username='Ahraking', api_key='n3uisowWWZcSGEgk3iyN')
 
 stemmer2 = WordNetLemmatizer()
 nltk.download("wordnet")
@@ -92,9 +99,10 @@ def cluster_us(movie_list=None):
     vocab_frame = pd.DataFrame({'words': totalvocab_stemmed}, index=totalvocab_stemmed)
 
     films = {'title': films, 'rank': ranks, 'synopsis': summary_list, 'cluster': clusters, 'genre': genres,
-             'year': years, 'foreign': foreigns, 'language':languages, 'country':countries}
+             'year': years, 'foreign': foreigns, 'language': languages, 'country': countries}
 
-    frame = pd.DataFrame(films, index=clusters, columns=['title', 'rank', 'cluster', 'genre', 'year', 'foreign', 'language', 'country'])
+    frame = pd.DataFrame(films, index=clusters,
+                         columns=['title', 'rank', 'cluster', 'genre', 'year', 'foreign', 'language', 'country'])
     print(frame['cluster'].value_counts())
     grouped = frame['rank'].groupby(frame['cluster'])  # groupby cluster for aggregation purposes
 
@@ -102,6 +110,11 @@ def cluster_us(movie_list=None):
     # frame = pd.DataFrame([films], index=[clusters], columns=['rank', 'title', 'cluster', 'genre'])
 
     print("Top terms per cluster:")
+    frame.to_csv("finished_output.csv")
+    # fig = px.scatter(frame, x='cluster', y='rank', color='cluster', hover_name='title', custom_data=['foreign'],
+    #                  symbol='foreign')
+    # chart_studio.plotly.plot(fig, filename='interactive_clustering', auto_open=True)
+    # fig.show()
     print()
     # sort cluster centers by proximity to centroid
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
@@ -129,6 +142,20 @@ def cluster_us(movie_list=None):
 
         print()
         print()
+        MDS()
+
+        # convert two components as we're plotting points in a two-dimensional plane
+        # "precomputed" because we provide a distance matrix
+        # we will also specify `random_state` so the plot is reproducible.
+        mds = MDS(n_components=2, dissimilarity="precomputed", random_state=1)
+
+        pos = mds.fit_transform(dist)  # shape (n_components, n_samples)
+
+        xs, ys = pos[:, 0], pos[:, 1]
+        frame = pd.DataFrame(dict(x=xs, y=ys, title=frame['title'], foreign=foreigns, cluster=clusters))
+        # groups = frame.groupby('label')
+        fig = px.scatter(frame, x='x', y='y', color='cluster', symbol='foreign',hover_name='title')
+        chart_studio.plotly.plot(fig, filename='interactive_clustering_mds', auto_open=True)
 
 
 def tokenize_and_stem(text):
